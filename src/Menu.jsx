@@ -1,5 +1,7 @@
 import './index.css'
 import img5 from './assets/5.jpg'
+import img6 from './assets/6.jpg'
+import img7 from './assets/7.png'
 
 function Menu() {
     const btn1 = {
@@ -8,8 +10,15 @@ function Menu() {
         fontWeight: 'bold'
     }
 
-    const backgroundStyle = {
+    const backgroundStyle1 = {
         backgroundImage: `url(${img5})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        height: '100vh'
+      };
+
+      const backgroundStyle2 = {
+        backgroundImage: `url(${img6})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         height: '100vh'
@@ -28,7 +37,7 @@ function Menu() {
                 </div>
             </div>
 
-            <div style={backgroundStyle} className='margarita flex flex-col items-center justify-end'>
+            <div style={backgroundStyle1} className='margarita flex flex-col items-center justify-end'>
                 <div>
                     <div className="flex  justify-center items-center">
                         <button style={btn1} className="py-2 px-4 btn-hover rounded-full m-2">DRINKS</button>
@@ -36,6 +45,18 @@ function Menu() {
                 </div>
                 <p>Viva Jalisco Restaurant in Bothell is renowned for crafting the most exquisite Margaritas in town. With their blended flavors and top-quality ingredients, their Margaritas are truly a taste of perfection.</p>
             </div>
+
+            <div style={backgroundStyle2} className='platos_comida flex flex-col items-center justify-center'>
+            <img src={img7} alt="imagen comida" />
+            <h1>PARTY PLATTERS?</h1>
+                <div>
+                    <div className="flex  justify-center items-center">
+                        <button style={btn1} className="py-2 px-4 btn-hover rounded-full m-2">TOGO HERE</button>
+                    </div>
+                </div>
+               
+            </div>
+
         </>
     )
 }

@@ -192,14 +192,7 @@ background-color: #004857;
     color: white !important;
 }
 
- .margarita{
-    /* background-image:url("./src/assets/5.jpg"); */
-    /* backgroundSize: 'cover', */
-    /* background-size: cover; */
-    /* background-position:center ; */
-        /* backgroundPosition: 'center', */
-    /* height: 100vh; */
-} 
+
 
 .margarita p{
     width: 30%;
@@ -210,4 +203,28 @@ background-color: #004857;
     font-family: "Montserrat Roman";
     text-align: center;
     margin-bottom: 1rem;
+}
+
+.platos_comida{
+    position: relative;
+}
+
+.platos_comida img{
+    position: absolute;
+    top: 0;
+}
+
+.platos_comida h1{
+    font-size: 395%;
+    letter-spacing: 1px;
+    line-height: 100px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: "Commador";
+    filter: drop-shadow(0px 36px 9px rgba(60,63,21,31.33));
+    font-weight: 700;
+}
+
+.platos_comida div div button{
+    z-index: 1;
 }
