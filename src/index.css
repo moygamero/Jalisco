@@ -192,6 +192,15 @@ background-color: #004857;
     color: white !important;
 }
 
+.margarita{
+    background-image:url("./src/assets/5.jpg");
+    /* backgroundSize: 'cover', */
+    background-size: cover;
+    background-position:center ;
+        /* backgroundPosition: 'center', */
+        height: 100vh;
+}
+
 .margarita p{
     width: 30%;
     font-size: 18px;

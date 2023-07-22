@@ -27,7 +27,7 @@ function Menu() {
                 </div>
             </div>
 
-            <div style={backgroundStyle} className='margarita flex flex-col items-center justify-end'>
+            <div  className='margarita flex flex-col items-center justify-end'>
                 <div>
                     <div className="flex  justify-center items-center">
                         <button style={btn1} className="py-2 px-4 btn-hover rounded-full m-2">DRINKS</button>
