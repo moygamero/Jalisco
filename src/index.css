@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root{
+:root {
     overflow-x: hidden;
 }
 
@@ -19,7 +19,7 @@
     z-index: 1;
 }
 
-.home-reponses{
+.home-reponses {
     width: 100%;
     background-color: #1f293785 !important;
     border-radius: 1rem;
@@ -28,7 +28,7 @@
     justify-content: space-around;
 }
 
-.menu-D{
+.menu-D {
     z-index: 3 !important;
     position: relative;
 }
@@ -132,36 +132,38 @@
 
 /* CONTENEDOR ABOUT */
 
-.about-cont{
-    background: linear-gradient(90deg, rgba(255,255,255,1) 60%, rgba(255,255,255,1) 61%, rgba(103,191,177,1) 61%, rgba(103,191,177,1) 75%, rgba(0,172,206,1) 75%, rgba(0,172,206,1) 76%);
+.about-cont {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 60%, rgba(255, 255, 255, 1) 61%, rgba(103, 191, 177, 1) 61%, rgba(103, 191, 177, 1) 75%, rgba(0, 172, 206, 1) 75%, rgba(0, 172, 206, 1) 76%);
     padding: 3rem 3rem 3rem 0;
 }
-.contenerdo1-about{
+
+.contenerdo1-about {
     align-items: center;
 }
-.item1_about{
+
+.item1_about {
     width: 263rem;
     margin-right: 2rem;
 }
 
-.item2_about{
-text-align: center;
+.item2_about {
+    text-align: center;
 }
 
-.item2_about h1{
+.item2_about h1 {
     font-size: 44px;
     letter-spacing: -1px;
     text-transform: uppercase;
     color: #ffffff;
     font-weight: 700;
-     /* font-family: "Commador"; */
+    /* font-family: "Commador"; */
 }
 
-.item2_about h1 span{
+.item2_about h1 span {
     color: #004857;
 }
 
-.item2_about p{
+.item2_about p {
     font-size: 13px;
     line-height: 13px;
     color: #004857;
@@ -175,10 +177,10 @@ text-align: center;
 .contenedor_menu {
     width: 100%;
     height: 27rem;
-background-color: #004857;
+    background-color: #004857;
 }
 
-.contenedor_menu h1{
+.contenedor_menu h1 {
     font-size: 160px;
     letter-spacing: 9px;
     line-height: 171px;
@@ -194,7 +196,7 @@ background-color: #004857;
 
 
 
-.margarita p{
+.margarita p {
     width: 30%;
     font-size: 18px;
     line-height: 23px;
@@ -205,26 +207,120 @@ background-color: #004857;
     margin-bottom: 1rem;
 }
 
-.platos_comida{
+.platos_comida {
     position: relative;
 }
 
-.platos_comida img{
+.platos_comida img {
     position: absolute;
     top: 0;
 }
 
-.platos_comida h1{
+.platos_comida h1 {
     font-size: 395%;
     letter-spacing: 1px;
     line-height: 100px;
     text-transform: uppercase;
     color: #ffffff;
     font-family: "Commador";
-    filter: drop-shadow(0px 36px 9px rgba(60,63,21,31.33));
+    filter: drop-shadow(0px 36px 9px rgba(60, 63, 21, 31.33));
     font-weight: 700;
 }
 
-.platos_comida div div button{
+.platos_comida div div button {
     z-index: 1;
 }
+
+/* CONTENEDOR Galeria */
+
+.galeria_img {
+    /* height: 50vh; */
+    height: 100%;
+    grid-template: auto / 1fr 1fr 1fr 1fr;
+}
+
+/* .galeria_img img {
+    height: 100%;
+} */
+
+.galeria_img div:nth-of-type(1) img:nth-of-type(1),
+.galeria_img div:nth-of-type(2) img:nth-of-type(2),
+.galeria_img div:nth-of-type(3) img:nth-of-type(1),
+.galeria_img div:nth-of-type(4) img:nth-of-type(2) {
+    height: 18rem !important;
+}
+
+.galeria_img div:nth-of-type(1) img:nth-of-type(2),
+.galeria_img div:nth-of-type(2) img:nth-of-type(1),
+.galeria_img div:nth-of-type(3) img:nth-of-type(2),
+.galeria_img div:nth-of-type(4) img:nth-of-type(1) {
+    height: 10rem !important;
+    width: 100%;
+}
+
+/* CONTENEDOR Footer */
+.footer_div1 {
+    width: 100%;
+    height: 24rem;
+    background-color: #004857;
+}
+
+.footer_div1 img {
+    width: 45%;
+}
+
+.footer_div2 {
+    width: 100%;
+    /* height: 12rem;
+     */
+     padding: 3rem;
+    background-color: #67bfb1;
+}
+
+
+.item1_footer h6 {
+    font-size: 15px;
+    line-height: 17px;
+    color: #ffffffa1;
+    font-weight: 300;
+    font-family: "Montserrat Roman";
+}
+
+.item1_footer h1 {
+    font-size: 42px;
+    line-height: 42px;
+    color: #ffffff;
+    font-weight: 800;
+    font-family: "Montserrat Roman";
+}
+
+.item1-div3-footer h1 {
+    font-size: 34px;
+    letter-spacing: -2px;
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 1;
+}
+.item1-div3-footer {
+    margin-right: 1rem;
+}
+
+.item2-div3-footer h1 {
+    font-size: 12px;
+    line-height: 13px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.item2-div3-footer h1 span {
+    color: #ffffff9a;
+}
+.item3_footer h6{
+    font-size: 22px;
+    line-height: 28px;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Montserrat Roman";
+}
+
+
