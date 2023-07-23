@@ -2,6 +2,8 @@ import './index.css'
 import img5 from './assets/5.jpg'
 import img6 from './assets/6.jpg'
 import img7 from './assets/7.png'
+import { Link } from 'react-scroll';
+
 
 function Menu() {
     const btn1 = {
@@ -26,7 +28,8 @@ function Menu() {
 
     return (
         <>
-            <div className='contenedor_menu flex flex-col items-center justify-center'>
+            <Link to="menu" smooth={true} duration={1000}></Link>
+            <div id="menu" className='contenedor_menu flex flex-col items-center justify-center'>
                 <h1>Menus</h1>
                 <div>
                     <div className="flex  justify-center items-center">
@@ -46,7 +49,8 @@ function Menu() {
                 <p>Viva Jalisco Restaurant in Bothell is renowned for crafting the most exquisite Margaritas in town. With their blended flavors and top-quality ingredients, their Margaritas are truly a taste of perfection.</p>
             </div>
 
-            <div style={backgroundStyle2} className='platos_comida flex flex-col items-center justify-center'>
+            <Link to="platter" smooth={true} duration={1000}></Link>
+            <div id="platter" style={backgroundStyle2} className='platos_comida flex flex-col items-center justify-center'>
             <img src={img7} alt="imagen comida" />
             <h1>PARTY PLATTERS?</h1>
                 <div>

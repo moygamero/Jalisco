@@ -5,7 +5,7 @@ function Bienvenido() {
 
     return (
         <>
-            <div className='text-div'>
+            <div  className='text-div'>
                 <h1 className="text-3xl font-bold">BIENVENIDOS!</h1>
                 <p>
                     At Viva Jalisco, flavor and generous portions take center stage, setting it apart from the rest.  <br />

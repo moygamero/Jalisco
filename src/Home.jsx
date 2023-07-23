@@ -8,6 +8,7 @@ import img4 from './assets/4.jpg'
 import img5 from './assets/5.jpg'
 import img6 from './assets/6.jpg'
 import './index.css'
+import { Link } from 'react-scroll';
 
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
@@ -41,15 +42,9 @@ function classNames(...classes) {
 function Home() {
     return (
         <>
-            {/*
-        This example requires updating your template:
-
-        ```
-        <html class="h-full bg-gray-100">
-        <body class="h-full">
-        ```
-      */}
-            <div className="min-h-full">
+           
+            <Link to="home" smooth={true} duration={1000}></Link>
+            <div id="home" className="min-h-full">
                 <Disclosure as="nav" className="header_nav">
                     {({ open }) => (
                         <>
@@ -59,17 +54,17 @@ function Home() {
 
                                         <div className="hidden md:block">
                                             <div className="ml-10 flex items-center space-x-4">
-                                                <a href="#" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium" >
+                                                <a href="#home" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium" >
                                                     HOME
                                                 </a>
-                                                <a href="#" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium" >
+                                                <a href="#about" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium" >
                                                     ABOUT
                                                 </a>
                                                 <img width='250px' className='d-flex' src={Logo} alt="Mi imagen" />
-                                                <a href="#" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium" >
+                                                <a  href="#menu" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium" >
                                                     MENU
                                                 </a>
-                                                <a href="#" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium" >
+                                                <a href="#platter" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium" >
                                                     PLATTERS
                                                 </a>
                                             </div>
