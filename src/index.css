@@ -51,8 +51,10 @@
 }
 
 .home_welcome h1 span {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    letter-spacing: 5px;
 }
+
 
 .home_welcome p {
     font-size: 20px;
