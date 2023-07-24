@@ -26,10 +26,10 @@ const imagenes = [
 
 
 const navigation = [
-    { name: 'HOME', href: '#', current: true },
-    { name: 'ABOUT', href: '#', current: false },
-    { name: 'MENU', href: '#', current: false },
-    { name: 'PLATTERS', href: '#', current: false },
+    { name: 'HOME', href: '#home', current: false },
+    { name: 'ABOUT', href: '#about', current: false },
+    { name: 'MENU', href: '#menu', current: false },
+    { name: 'PLATTERS', href: '#platter', current: false },
 ]
 
 
@@ -87,7 +87,7 @@ function Home() {
                                     </div>
                                 </div>
 
-                                <Disclosure.Panel className="menu-D md:hidden bg-gray-800">
+                                <Disclosure.Panel className="md:hidden bg-gray-800">
                                     <div className="space-y-1 px-2 pb-3 pt-2 sm:px-3 ">
                                         {navigation.map((item) => (
                                             <Disclosure.Button

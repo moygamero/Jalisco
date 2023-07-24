@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@font-face {
+    font-family: 'Commador';
+    src: url('./assets/FONTS/Commador.ttf');
+}
+  
+
 :root {
     overflow-x: hidden;
 }
@@ -21,7 +28,7 @@
 .header_nav {
     width: 100%;
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     /* background: #1f293785; */
 }
 
@@ -53,6 +60,8 @@
     color: #ffffff;
     font-family: "Montserrat Roman";
     text-align: center;
+    filter: drop-shadow(0px 25px 4.5px rgba(0, 0, 1, 0.59));
+
 }
 
 .home-reponses {
@@ -64,10 +73,20 @@
     justify-content: space-around;
 }
 
-.menu-D {
+.carousel .control-dots {
+    position: absolute;
+    bottom: 0;
+    margin: 10px 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+}
+
+/* .menu-D {
     z-index: 3 !important;
     position: relative;
-}
+} */
 
 /* CONTENEDOR BIENVENIDOS */
 .text-div {
